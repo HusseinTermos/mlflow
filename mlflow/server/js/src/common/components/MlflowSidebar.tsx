@@ -167,6 +167,26 @@ export function MlflowSidebar({
           ]
         : []),
       {
+        key: 'alphaarc-launch',
+        icon: <BeakerIcon />,
+        linkProps: {
+          to: '/alphaarc/launch',
+          isActive: (location: Location) => location.pathname === '/alphaarc/launch',
+          children: <FormattedMessage defaultMessage="Launch evaluation" description="AlphaArc launch sidebar link" />,
+        },
+        componentId: 'mlflow.sidebar.alphaarc_launch_link',
+      },
+      {
+        key: 'alphaarc-jobs',
+        icon: <TextBoxIcon />,
+        linkProps: {
+          to: '/alphaarc/jobs',
+          isActive: (location: Location) => location.pathname === '/alphaarc/jobs',
+          children: <FormattedMessage defaultMessage="Evaluation jobs" description="AlphaArc jobs sidebar link" />,
+        },
+        componentId: 'mlflow.sidebar.alphaarc_jobs_link',
+      },
+      {
         key: 'experiments',
         icon: <BeakerIcon />,
         linkProps: {

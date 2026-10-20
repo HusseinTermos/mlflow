@@ -771,6 +771,10 @@
     "defaultMessage": "Launch Demo",
     "description": "Demo banner launch button"
   },
+  "1BJKZn": {
+    "defaultMessage": "Launch another evaluation",
+    "description": "Launch another evaluation link"
+  },
   "1Buj/Q": {
     "defaultMessage": "Alternatively, you can interact with this trace via the MLflow Python SDK, using the {code} function. For more information, please check the {documentation_link}.",
     "description": "Body text for when a trace is too large to display"
@@ -802,6 +806,10 @@
   "1OQt7+": {
     "defaultMessage": "Evaluate traces",
     "description": "Title for the run evaluation modal dialog"
+  },
+  "1QskOp": {
+    "defaultMessage": "Progress",
+    "description": "Evaluation job progress column"
   },
   "1RAM3C": {
     "defaultMessage": "Failed to delete some API keys. Please try again.",
@@ -1002,6 +1010,10 @@
   "2DNVN4": {
     "defaultMessage": "Aliases allow you to assign a mutable, named reference to a particular model version. <link>Learn more</link>",
     "description": "Explanation of registered model aliases"
+  },
+  "2DO0vv": {
+    "defaultMessage": "No evaluation agents are registered.",
+    "description": "No registered evaluation agents"
   },
   "2Hf+yU": {
     "defaultMessage": "Time (wall)",
@@ -1415,6 +1427,10 @@
     "defaultMessage": "Structured output:",
     "description": "Label for structured output schema in the prompt details page"
   },
+  "40e5TF": {
+    "defaultMessage": "Evaluation jobs",
+    "description": "Evaluation jobs title"
+  },
   "40u/J+": {
     "defaultMessage": "Custom code",
     "description": "Label for custom code scorer type"
@@ -1654,6 +1670,14 @@
   "4q+cYS": {
     "defaultMessage": "Clear all filters",
     "description": "Aria label for the clear-all-filters button next to the traces filter button"
+  },
+  "4q4ldP": {
+    "defaultMessage": "Could not load evaluation job {id}. {error}",
+    "description": "Requested evaluation job could not be loaded"
+  },
+  "4qWLBX": {
+    "defaultMessage": "No evaluations yet. Launch your first evaluation to see progress here.",
+    "description": "Empty evaluation jobs"
   },
   "4qjOWx": {
     "defaultMessage": "Tools",
@@ -2351,6 +2375,10 @@
     "defaultMessage": "Or create a prompt manually",
     "description": "CTA on the prompts empty state to create a prompt as an alternative to the agent path"
   },
+  "7iPx88": {
+    "defaultMessage": "Status",
+    "description": "Evaluation case status column"
+  },
   "7jsqqe": {
     "defaultMessage": "{timeSince, plural, =1 {1 minute} other {# minutes}} ago",
     "description": "Text for time in minutes since given date for MLflow views"
@@ -2471,6 +2499,10 @@
     "defaultMessage": "Prompt type:",
     "description": "A label for selecting prompt type in the prompt creation modal"
   },
+  "822V3r": {
+    "defaultMessage": "Expected answer",
+    "description": "Dataset expectation column"
+  },
   "82ss+c": {
     "defaultMessage": "Session",
     "description": "Header for the traces table session column"
@@ -2531,6 +2563,10 @@
     "defaultMessage": "The provided value is not valid JSON",
     "description": "Error message for invalid JSON in an assessment edit form"
   },
+  "8JhkAF": {
+    "defaultMessage": "Concurrent cases",
+    "description": "Evaluation concurrency label"
+  },
   "8Mwwrq": {
     "defaultMessage": "No matching users",
     "description": "Review queue: no users match the owner search"
@@ -2546,6 +2582,10 @@
   "8Rlf8s": {
     "defaultMessage": "— The model decides whether to call one or more tools (default).",
     "description": "Description of the Auto tool choice in the Tools info popover"
+  },
+  "8TGp0G": {
+    "defaultMessage": "View evaluation jobs",
+    "description": "Link to evaluation jobs"
   },
   "8Uwpjw": {
     "defaultMessage": "Create run",
@@ -2686,6 +2726,10 @@
   "90mZic": {
     "defaultMessage": "Budget",
     "description": "Budget amount column header"
+  },
+  "90rBIL": {
+    "defaultMessage": "Evaluation name",
+    "description": "Evaluation name field"
   },
   "917MAH": {
     "defaultMessage": "Trace archival retention must be at most {maxLength} characters.",
@@ -3114,6 +3158,10 @@
   "AX7L9r": {
     "defaultMessage": "Error",
     "description": "Error assessment status in the evaluations table."
+  },
+  "AXNFss": {
+    "defaultMessage": "All cases",
+    "description": "Entire dataset case limit placeholder"
   },
   "AanBxl": {
     "defaultMessage": "my-endpoint",
@@ -3727,6 +3775,10 @@
     "defaultMessage": "Line chart",
     "description": "Experiment tracking > runs charts > add chart menu > line chart"
   },
+  "CzE23w": {
+    "defaultMessage": "Select an evaluation job to view its progress and results.",
+    "description": "Select an evaluation job instruction"
+  },
   "D+UN8o": {
     "defaultMessage": "No metric charts",
     "description": "Experiment page > compare runs > no metric charts"
@@ -3918,6 +3970,10 @@
   "DsitAi": {
     "defaultMessage": "About access endpoints",
     "description": "Aria label for access endpoints subsection help popover"
+  },
+  "DudF7t": {
+    "defaultMessage": "Showing {count} of {total} cases",
+    "description": "Dataset preview sample count"
   },
   "DutAb5": {
     "defaultMessage": "Search to find more queues",
@@ -4447,9 +4503,17 @@
     "defaultMessage": "You do not have permission to access this resource.",
     "description": "Generic message for a permission error (HTTP STATUS 403)"
   },
+  "G6zDpw": {
+    "defaultMessage": "Jobs run independently of this page. Progress updates automatically as cases are evaluated.",
+    "description": "Evaluation jobs explanation"
+  },
   "G7V4y3": {
     "defaultMessage": "Hide details",
     "description": "Evaluation review > assessments > hide details button"
+  },
+  "G7tYaw": {
+    "defaultMessage": "No evaluation datasets are linked to this experiment. Add one in MLflow's Datasets page, then refresh choices.",
+    "description": "No linked evaluation datasets"
   },
   "GAJL1v": {
     "defaultMessage": "Input and output schema for your model. <link>Learn more</link>",
@@ -4510,6 +4574,10 @@
   "GRaplV": {
     "defaultMessage": "Context sufficiency",
     "description": "Evaluation results > known type of evaluation result assessment > context sufficiency assessment. Used to indicate if the retrieved context is sufficient to generate the expected response. Label displayed if user provided custom value, e.g. \"Context Sufficiency: mostly sufficient\""
+  },
+  "GTD9CN": {
+    "defaultMessage": "Case limit (optional)",
+    "description": "Optional evaluation case limit label"
   },
   "GWkYrG": {
     "defaultMessage": "Provide a unique prompt name",
@@ -4634,6 +4702,10 @@
   "H+tV5c": {
     "defaultMessage": "Coding Agents",
     "description": "Gateway > Quick start > Coding Agents card header"
+  },
+  "H/dWG7": {
+    "defaultMessage": "Choose an agent and dataset, then configure your run.",
+    "description": "Evaluation setup introduction"
   },
   "H/o0P2": {
     "defaultMessage": "Zoom out",
@@ -6219,6 +6291,10 @@
     "defaultMessage": "Comparing {numRuns} Runs from 1 Experiment",
     "description": "Breadcrumb title for compare runs page with single experiment"
   },
+  "NO7r8+": {
+    "defaultMessage": "Leave blank to run the entire dataset.",
+    "description": "Optional evaluation case limit help"
+  },
   "NPlcrl": {
     "defaultMessage": "Clear filters",
     "description": "Button to clear filters in the tags filter popover for experiments page search by tags"
@@ -6399,6 +6475,10 @@
     "defaultMessage": "Load model as a Spark UDF. Override result_type if the model does not return double values.",
     "description": "Code comment which states how to load model using spark UDF"
   },
+  "O39fly": {
+    "defaultMessage": "Cancellation requested",
+    "description": "Cancellation requested label"
+  },
   "O3RheJ": {
     "defaultMessage": "Link prompts to traces",
     "description": "Heading describing how to add prompts when no prompt records are available"
@@ -6410,6 +6490,10 @@
   "O4KXrW": {
     "defaultMessage": "Enter the retention",
     "description": "Placeholder for trace archival retention amount input"
+  },
+  "O66Tm7": {
+    "defaultMessage": "Experiment",
+    "description": "Evaluation experiment selector"
   },
   "O75jRh": {
     "defaultMessage": "This view's definition couldn't be read and can't be displayed. Edit it with the assistant to rebuild it.",
@@ -6955,6 +7039,10 @@
     "defaultMessage": "Y-axis:",
     "description": "Label where the users can choose the metric of the experiment run to be plotted on the Y-axis"
   },
+  "QCmXCv": {
+    "defaultMessage": "Enter a positive whole number.",
+    "description": "Invalid evaluation concurrency"
+  },
   "QD6iZA": {
     "defaultMessage": "No parameters match the search filter",
     "description": "Run page > Overview > Parameters table > No results after filtering"
@@ -7210,6 +7298,10 @@
   "REfKpP": {
     "defaultMessage": "Question for reviewer",
     "description": "Review question name input"
+  },
+  "RF378M": {
+    "defaultMessage": "Create an experiment in MLflow, then refresh choices.",
+    "description": "No evaluation experiments"
   },
   "RGKRP9": {
     "defaultMessage": "Feedback",
@@ -7642,6 +7734,10 @@
   "T+dwu8": {
     "defaultMessage": "Pre-built LLM-as-a-judge",
     "description": "Sub-label for a pre-built LLM-as-a-judge row in the run evaluation modal"
+  },
+  "T+h59x": {
+    "defaultMessage": "Answer / error",
+    "description": "Evaluation output column"
   },
   "T/46y0": {
     "defaultMessage": "Machine learning",
@@ -8119,6 +8215,10 @@
     "defaultMessage": "Flag for review",
     "description": "Assign traces to reviewers via a review queue action"
   },
+  "V/zl3c": {
+    "defaultMessage": "Expected",
+    "description": "Evaluation expected answer column"
+  },
   "V0/5Oy": {
     "defaultMessage": "Model: {model}",
     "description": "Display of default model for selected provider"
@@ -8202,6 +8302,10 @@
   "VGJhVI": {
     "defaultMessage": "Add New Tag",
     "description": "Add new key-value tag modal > Modal title"
+  },
+  "VH4kpW": {
+    "defaultMessage": "Created",
+    "description": "Evaluation creation column"
   },
   "VHuRTt": {
     "defaultMessage": "Doc",
@@ -8311,6 +8415,10 @@
     "defaultMessage": "Deleted traces cannot be restored. Are you sure you want to proceed?",
     "description": "Experiment page > traces view controls > Delete traces modal > Confirmation message"
   },
+  "VgK1+W": {
+    "defaultMessage": "Score",
+    "description": "Evaluation score column"
+  },
   "ViqP7B": {
     "defaultMessage": "Traces",
     "description": "Label for the traces tab in the MLflow experiment navbar"
@@ -8387,6 +8495,10 @@
     "defaultMessage": "Low",
     "description": "Issue severity tag label for low severity"
   },
+  "Vw2gaR": {
+    "defaultMessage": "Dataset preview",
+    "description": "Dataset preview heading"
+  },
   "VwxvII": {
     "defaultMessage": "forecasting",
     "description": "A short label for experiments focused on time series forecasting"
@@ -8454,6 +8566,10 @@
   "WA9JZI": {
     "defaultMessage": "Value:",
     "description": "Label for tag value in modal"
+  },
+  "WB6+Rs": {
+    "defaultMessage": "{count} cases · {workers} at a time",
+    "description": "Evaluation run size summary"
   },
   "WCG4Z9": {
     "defaultMessage": "Inputs",
@@ -8598,6 +8714,10 @@
   "WiaEQ3": {
     "defaultMessage": "Model output",
     "description": "Evaluation review > Response section > model output > title"
+  },
+  "WiebeV": {
+    "defaultMessage": "Agent",
+    "description": "Evaluation agent selector"
   },
   "Wig7z4": {
     "defaultMessage": "Trace ID",
@@ -9131,6 +9251,10 @@
     "defaultMessage": "Human feedback",
     "description": "Label for the button to add human feedback to the trace"
   },
+  "Yeevg7": {
+    "defaultMessage": "Status",
+    "description": "Evaluation job status column"
+  },
   "YhHwLg": {
     "defaultMessage": "Time",
     "description": "Header for the traces table start-time column"
@@ -9427,6 +9551,10 @@
     "defaultMessage": "New run name",
     "description": "Experiment page > new run modal > run name input label"
   },
+  "Zr7Q5o": {
+    "defaultMessage": "Cases evaluated in parallel. Default: 2.",
+    "description": "Evaluation concurrency help"
+  },
   "ZstVNI": {
     "defaultMessage": "Outputs",
     "description": "Model trace explorer > selected span > outputs header"
@@ -9458,6 +9586,10 @@
   "a3G5A7": {
     "defaultMessage": "Provider",
     "description": "Summary provider label"
+  },
+  "a3LWAU": {
+    "defaultMessage": "Question",
+    "description": "Dataset question column"
   },
   "a3Ohkk": {
     "defaultMessage": "Add tag",
@@ -9550,6 +9682,10 @@
   "aOW396": {
     "defaultMessage": "{timeSince, plural, =1 {1 hour} other {# hours}} ago",
     "description": "Text for time in hours since given date for MLflow views"
+  },
+  "aOuLeP": {
+    "defaultMessage": "Evaluation jobs",
+    "description": "AlphaArc jobs sidebar link"
   },
   "aQxQIF": {
     "defaultMessage": "(empty)",
@@ -9658,6 +9794,10 @@
   "an4yfn": {
     "defaultMessage": "Your changes will be lost if you leave this panel without saving.",
     "description": "Body text for the discard-unsaved-changes prompt on the dataset record side panel"
+  },
+  "anctk1": {
+    "defaultMessage": "Launch evaluation",
+    "description": "AlphaArc launch page title"
   },
   "ap/pp3": {
     "defaultMessage": "Up to {max} options.",
@@ -10367,6 +10507,10 @@
     "defaultMessage": "Please provide run name",
     "description": "Experiment page > new run modal > invalid state - no run name provided"
   },
+  "dZgsaH": {
+    "defaultMessage": "Enter a positive whole number within the dataset size.",
+    "description": "Invalid evaluation case limit"
+  },
   "dd8i7f": {
     "defaultMessage": "Define custom instructions for LLM evaluation",
     "description": "Hint for Custom judge"
@@ -10719,6 +10863,10 @@
     "defaultMessage": "Root Cause Analysis",
     "description": "Root cause analysis section title"
   },
+  "euJU37": {
+    "defaultMessage": "One LLM call per case, up to {tokens} output tokens.",
+    "description": "Evaluation model usage hint"
+  },
   "eumKln": {
     "defaultMessage": "Update password",
     "description": "Confirm button label in the change-password modal"
@@ -10878,6 +11026,10 @@
   "fZPf0W": {
     "defaultMessage": "Reverse color:",
     "description": "Label text for reverse color toggle in contour plot comparison\n                      in MLflow"
+  },
+  "fZocwL": {
+    "defaultMessage": "Evaluation setup",
+    "description": "Evaluation setup section title"
   },
   "faLIN+": {
     "defaultMessage": "Timestamp",
@@ -11214,6 +11366,10 @@
   "gc+GrI": {
     "defaultMessage": "Model, input data or prompt have changed since last evaluation of the output",
     "description": "Experiment page > new run modal > dirty output (out of sync with new data)"
+  },
+  "gcLVyI": {
+    "defaultMessage": "Case",
+    "description": "Evaluation case column"
   },
   "gdK07H": {
     "defaultMessage": "Bar chart",
@@ -11611,6 +11767,10 @@
     "defaultMessage": "No metrics match the search filter",
     "description": "Message displayed when no metrics match the search filter in the logged model details metrics table"
   },
+  "i++5JJ": {
+    "defaultMessage": "Dataset",
+    "description": "Evaluation dataset selector"
+  },
   "i+1bTL": {
     "defaultMessage": "Test",
     "description": "Type pill text for a regression-test run in the evaluation runs table"
@@ -11654,6 +11814,10 @@
   "i3YjH+": {
     "defaultMessage": "Showing the first {count} matches — refine your search",
     "description": "Review queue: hint that the reviewer search results were capped"
+  },
+  "i3qw/c": {
+    "defaultMessage": "Run settings",
+    "description": "Evaluation run settings section"
   },
   "i49wE6": {
     "defaultMessage": "We couldn't load your experiments.",
@@ -12163,6 +12327,10 @@
     "defaultMessage": "Is the answer correct?",
     "description": "Review question name input placeholder"
   },
+  "jylpuF": {
+    "defaultMessage": "Cancel evaluation",
+    "description": "Cancel evaluation button"
+  },
   "jzNMBH": {
     "defaultMessage": "This key is currently in use. After deleting, you will need to attach a different API key to continue using the endpoints currently using this key.",
     "description": "Gateway > Delete API key modal > Warning about endpoints using this key"
@@ -12567,6 +12735,10 @@
     "defaultMessage": "Delete \"{name}\"? This can't be undone.",
     "description": "Body of the confirmation dialog for deleting a saved experiment view"
   },
+  "lYB0wI": {
+    "defaultMessage": "Open MLflow results and traces",
+    "description": "MLflow evaluation result link"
+  },
   "lZPbxb": {
     "defaultMessage": "Hide charts with no data",
     "description": "Experiment page > control bar > label for a checkbox toggle button that hides chart cards with no corresponding data"
@@ -12666,6 +12838,10 @@
   "lzW28v": {
     "defaultMessage": "Metadata",
     "description": "Section label for metadata columns in the traces table column selector"
+  },
+  "m+7Ti8": {
+    "defaultMessage": "Launch evaluation",
+    "description": "AlphaArc launch sidebar link"
   },
   "m1Nb7W": {
     "defaultMessage": "Save",
@@ -14519,6 +14695,10 @@
     "defaultMessage": "Active",
     "description": "Webhook active status"
   },
+  "tFLi+2": {
+    "defaultMessage": "Refresh choices",
+    "description": "Refresh evaluation catalogs"
+  },
   "tFVXU7": {
     "defaultMessage": "Issue ID",
     "description": "Label for issue ID in popover"
@@ -14979,6 +15159,10 @@
     "defaultMessage": "Provider cannot be changed. Create a new key if a different provider is needed.",
     "description": "Tooltip explaining why provider field is disabled in drawer edit"
   },
+  "vSnfKw": {
+    "defaultMessage": "{count} cases available",
+    "description": "Selected dataset case count"
+  },
   "vVSm7w": {
     "defaultMessage": "This column contains all models logged or evaluated by the run. Click into an individual run to see more detailed information about all models associated with it.",
     "description": "A descriptive tooltip for the \"Models\" column header in the runs table on the MLflow experiment detail page"
@@ -15126,6 +15310,10 @@
   "w80phd": {
     "defaultMessage": "Error",
     "description": "Title for error fallback component in experiment evaluation runs UI"
+  },
+  "w9yt2Z": {
+    "defaultMessage": "Evaluation",
+    "description": "Evaluation job name column"
   },
   "wBFfWW": {
     "defaultMessage": "Register",
@@ -15578,6 +15766,10 @@
   "xiFkTH": {
     "defaultMessage": "Use for evaluation",
     "description": "Trace actions dropdown group label"
+  },
+  "xiHtIw": {
+    "defaultMessage": "Launch evaluation",
+    "description": "Launch evaluation button"
   },
   "xiMqde": {
     "defaultMessage": "You can assign up to {max} reviewers. Unselect one to choose another.",
