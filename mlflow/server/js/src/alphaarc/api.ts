@@ -67,6 +67,62 @@ export type LaunchRequest = {
   concurrency: number;
 };
 
+export const metricKeySchema = z.string().min(1);
+export const metricDefinitionsSchema = z.object({
+  version: z.literal('1'),
+  aggregations: z.array(z.enum(['mean', 'min', 'p90'])),
+  correctness: z.string(),
+  answer_similarity: z.string(),
+  format_compliance: z.string(),
+  token_efficiency: z.string(),
+  latency_efficiency: z.string(),
+  workflow_success: z.string(),
+  latency_ms: z.string(),
+  total_tokens: z.string(),
+  quality_score: z.object({
+    weighted_mean: z.object({ correctness: z.number(), answer_similarity: z.number(), format_compliance: z.number() }),
+  }),
+  overall_score: z.object({
+    weighted_mean: z.object({
+      quality_score: z.number(),
+      token_efficiency: z.number(),
+      latency_efficiency: z.number(),
+    }),
+  }),
+  weighted_accuracy: z.object({ category_weights: z.record(z.number()) }),
+  macro_category_accuracy: z.string(),
+});
+export const runMetricsSchema = z.object({
+  job_id: z.string(),
+  run_id: z.string(),
+  experiment_id: z.string(),
+  run_name: z.string(),
+  agent_name: z.string().nullable(),
+  dataset_name: z.string().nullable(),
+  dataset_digest: z.string(),
+  status: z.string(),
+  total_cases: z.number().int().nonnegative(),
+  completed_cases: z.number().int().nonnegative(),
+  definitions: metricDefinitionsSchema.nullable(),
+  metrics: z.record(z.number().finite()),
+  score_storage: z.enum(['mlflow-ensemble-v1', 'legacy-artifact']),
+  score_nodes: z.record(
+    z.object({
+      aggregation: z.enum(['mean', 'min', 'max', 'median', 'variance', 'p90']),
+      description: z.string(),
+      unit: z.string().min(1),
+      direction: z.enum(['higher', 'lower']),
+      children: z.record(metricKeySchema, z.number().finite().min(0).max(1)),
+    }),
+  ),
+  cases: z.array(
+    z.object({ id: z.string(), question: z.string(), category: z.string(), metrics: z.record(z.number().finite()) }),
+  ),
+});
+export type MetricKey = z.infer<typeof metricKeySchema>;
+export type RunMetrics = z.infer<typeof runMetricsSchema>;
+export type MetricAggregation = 'mean' | 'min' | 'p90';
+
 export const evaluationApi = {
   catalog: async () => catalogSchema.parse(await fetchAPI('/api/alphaarc/catalog')),
   datasets: async (experimentId: string) =>
@@ -81,6 +137,8 @@ export const evaluationApi = {
     ),
   jobs: async () => z.array(jobSchema).parse(await fetchAPI('/api/alphaarc/jobs')),
   job: async (id: string) => jobSchema.parse(await fetchAPI(`/api/alphaarc/jobs/${encodeURIComponent(id)}`)),
+  metrics: async (id: string) =>
+    runMetricsSchema.parse(await fetchAPI(`/api/alphaarc/jobs/${encodeURIComponent(id)}/metrics`)),
   launch: async (request: LaunchRequest) =>
     jobSchema.parse(await fetchAPI('/api/alphaarc/jobs', { method: 'POST', body: request })),
   cancel: async (id: string) =>

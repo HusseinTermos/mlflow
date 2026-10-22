@@ -187,6 +187,16 @@ export function MlflowSidebar({
         componentId: 'mlflow.sidebar.alphaarc_jobs_link',
       },
       {
+        key: 'alphaarc-metrics',
+        icon: <TextBoxIcon />,
+        linkProps: {
+          to: '/alphaarc/metrics',
+          isActive: (location: Location) => location.pathname === '/alphaarc/metrics',
+          children: <FormattedMessage defaultMessage="Metric comparison" description="AlphaArc metrics sidebar link" />,
+        },
+        componentId: 'mlflow.sidebar.alphaarc_metrics_link',
+      },
+      {
         key: 'experiments',
         icon: <BeakerIcon />,
         linkProps: {

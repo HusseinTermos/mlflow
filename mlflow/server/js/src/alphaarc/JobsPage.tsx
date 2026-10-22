@@ -58,6 +58,12 @@ export default function JobsPage() {
         <Link componentId="alphaarc.jobs.launch" to="/alphaarc/launch">
           <FormattedMessage defaultMessage="Launch another evaluation" description="Launch another evaluation link" />
         </Link>
+        <Link componentId="alphaarc.jobs.metrics" to="/alphaarc/metrics" css={{ marginLeft: theme.spacing.lg }}>
+          <FormattedMessage
+            defaultMessage="Compare hierarchical metrics"
+            description="Compare evaluation metrics link"
+          />
+        </Link>
         {jobs.isLoading && <Spinner />}
         {jobs.isError && (
           <Alert componentId="alphaarc.jobspage.alert.1" type="error" message={String(jobs.error)} closable={false} />

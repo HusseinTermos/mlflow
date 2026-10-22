@@ -2115,6 +2115,10 @@
     "defaultMessage": "Model",
     "description": "Section header for model selection"
   },
+  "6k+ZBW": {
+    "defaultMessage": "Compare hierarchical metrics",
+    "description": "Compare evaluation metrics link"
+  },
   "6kSKRk": {
     "defaultMessage": "Comparing {numVersions} Versions",
     "description": "Text for main title for the model comparison page"
@@ -9118,6 +9122,10 @@
   "Y7DzTT": {
     "defaultMessage": "Input",
     "description": "Label for the input tokens in the tooltip for the tokens cell."
+  },
+  "Y8Zr++": {
+    "defaultMessage": "Metric comparison",
+    "description": "AlphaArc metrics sidebar link"
   },
   "Y9ZFyN": {
     "defaultMessage": "Download artifact",

@@ -13,4 +13,10 @@ export const getAlphaArcRouteDefs = () => [
     pageId: 'mlflow.alphaarc.jobs',
     handle: { getPageTitle: () => 'Evaluation jobs' },
   },
+  {
+    path: '/alphaarc/metrics',
+    element: createLazyRouteElement(() => import('./MetricsPage')),
+    pageId: 'mlflow.alphaarc.metrics',
+    handle: { getPageTitle: () => 'Metric comparison' },
+  },
 ];
